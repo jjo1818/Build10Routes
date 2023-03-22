@@ -13,7 +13,7 @@ const classController = require('../controllers/classController')
 router.get('/', classController.index)
 
 
-// Setup an "show" route for fruits, attach it to router along with the controller logic
+// Setup an "show" route for class, attach it to router along with the controller logic
 router.get('/:index', classController.show)
 
 

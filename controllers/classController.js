@@ -4,7 +4,7 @@ const classes = require("../models/classes");
 module.exports.index = (req, res) => {
 
    
-    // Looks in the views folder for "meats/Index" and passes { meats } data to the view (kind of like a server props object)
+    // Looks in the views folder for "class/Index" and passes { class } data to the view (kind of like a server props object)
     res.render('classes/Index', { classes: classes })
 }
 
@@ -12,5 +12,6 @@ module.exports.index = (req, res) => {
 module.exports.show = (req, res) => {
     
     res.render('classes/Show', { class: classes[req.params.index] })
+// { item: data[req.params.index], index:req.params.index }
 };
 
